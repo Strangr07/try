@@ -2,12 +2,15 @@
   margin: 0;
   padding: 0;
 }
-
+/* d9f0ff */
+/* a3d5ff */
+/* 83c9f4 */
+/* 6f73d2 */
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 10vh;
+  height: 6vh;
 }
 
 a {
@@ -20,6 +23,15 @@ a {
   align-items: center;
   color: #6f73d2;
   font-size: 1.1em;
+  font-weight: 700;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+
+  transition: ease-in-out 0.6s;
+}
+.navigation a:hover {
+  letter-spacing: 0.005em;
+  font-weight: bold;
+  color: #3b3e8f;
 }
 
 .navigation {
@@ -45,7 +57,7 @@ a {
   margin: 3vh 0;
   width: 100vw;
   max-width: 100%;
-  background-color: aquamarine;
+  background-color: #d9f0ff;
   height: 65vh;
   display: flex;
   justify-content: center;
@@ -53,7 +65,7 @@ a {
 }
 
 .landingContainer {
-  background-color: wheat;
+  background-color: white;
   height: 60vh;
   width: 98vw;
   display: flex;
@@ -71,7 +83,8 @@ a {
 }
 
 .landingContainerRight {
-  background-color: white;
+  background-color: #d9f0ff;
+  color: #3b3e8f;
   width: 50vw;
   height: 45vh;
 }
@@ -79,8 +92,19 @@ a {
 .landingContainerButton {
   position: relative;
   left: 35vw;
-}
+  background-color: #3b3e8f;
+  color: #d9f0ff;
+  padding: 10px 20px;
 
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: ease-in-out 0.3s;
+}
+.landingContainerButton:hover {
+  background-color: #d9f0ff;
+  color: #3b3e8f;
+}
 .planningPage {
   background-color: aqua;
   height: 15vh;
