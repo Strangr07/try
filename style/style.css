@@ -20,7 +20,7 @@ a {
 
 .navigation {
   background-color: wheat;
-  width: 70vw;
+  width: 60vw;
   height: 7vh;
   display: flex;
   justify-content: space-around;
@@ -28,11 +28,12 @@ a {
 }
 
 .logo {
+  padding-left: 3vw;
   background-color: wheat;
-  width: 30vw;
+  width: 40vw;
   height: 7vh;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -41,17 +42,37 @@ a {
   width: 100vw;
   max-width: 100%;
   background-color: aquamarine;
-  height: 80vh;
+  height: 65vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .landingContainer {
   background-color: wheat;
-  height: 75vh;
-  width: inherit;
+  height: 60vh;
+  width: 98vw;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
+.landingContainerLeft {
+  background-color: white;
+  width: 30vw;
+  height: 45vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.landingContainerRight {
+  background-color: white;
+  width: 50vw;
+  height: 45vh;
+}
 
+.landingContainerButton{
+    position: relative;
+    left: 35vw;
+}
