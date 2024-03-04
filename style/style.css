@@ -31,4 +31,27 @@ a {
   background-color: wheat;
   width: 30vw;
   height: 7vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.landingPage {
+  margin: 3vh 0;
+  width: 100vw;
+  max-width: 100%;
+  background-color: aquamarine;
+  height: 80vh;
+}
+
+.landingContainer {
+  background-color: wheat;
+  height: 75vh;
+  width: inherit;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+
