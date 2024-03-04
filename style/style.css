@@ -8,7 +8,6 @@ nav {
   justify-content: space-between;
   align-items: center;
   height: 10vh;
-  background-color: aqua;
 }
 
 a {
@@ -19,10 +18,12 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #6f73d2;
+  font-size: 1.1em;
 }
 
 .navigation {
-  background-color: wheat;
+  background-color: #d9f0ff;
   width: 60vw;
   height: 7vh;
   display: flex;
@@ -32,7 +33,7 @@ a {
 
 .logo {
   padding-left: 3vw;
-  background-color: wheat;
+  background-color: #d9f0ff;
   width: 40vw;
   height: 7vh;
   display: flex;
