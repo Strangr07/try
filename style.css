@@ -250,22 +250,25 @@ a {
 }
 
 .packagePage {
-  background-color: #d9f0ff;
-  height: 80vh;
+  height: 90vh;
   margin: 3vh 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #d9f0ff;
 }
 
 .packageContainer {
-  background-color: #83c9f4;
-  height: 75vh;
-  width: 90vw;
+  height: inherit;
+  width: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #d9f0ff;
 }
 
 .packagetitle {
-  height: 10vh;
+  height: 7vh;
   background-color: #d9f0ff;
   display: flex;
   flex-direction: column;
@@ -274,51 +277,94 @@ a {
 }
 
 .packageGrid {
-  height: 55vh;
+  height: 78vh;
+  width: 95vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.packageCards {
+  height: 73vh;
+  width: inherit;
   margin: 3vh 0;
   background-color: #6f73d2;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
+  border: 3px solid #1e2151;
+  border-radius: 0.75vw;
 }
 
 .gridItem1 {
   background-color: white;
-  height: 45vh;
+  height: 60vh;
   width: 25vw;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
+  border-radius: 10px;
+  box-shadow: 
+  2px 2px 20px black,
+  -1px -1px 0px white;
 }
 
 .itemImage {
   height: 25vh;
   width: 25vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
 .itemImage img {
   height: inherit;
-  width: inherit;
+}
+
+.itemDetail {
+  height: 25vh;
+  width: 22vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .itemTitle {
+  width: 22vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.itemDetail {
-  width: 22vw;
+.itemDescription {
+  height: 15vh;
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  align-items: center;
+}
+
+.itemButton {
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .itemButton button {
-  height: 3vh;
-  width: 23vw;
+  height: 3.5vh;
+  width: 10vw;
   margin-bottom: 1vh;
+  background-color: #83c9f4;
+  border-radius: 1.3rem;
+  border: 2px solid transparent;
+}
+
+.itemButton button:hover {
+  background-color: #3b3e8f;
+  color: white;
+  border: 2px solid white;
 }
 
 footer {
@@ -376,7 +422,7 @@ footer {
 
 .galleryPage {
   background-color: #d9f0ff;
-  height: 110vh;
+  height: 90vh;
   margin: 3vh 0;
   display: flex;
   justify-content: center;
@@ -384,7 +430,7 @@ footer {
 }
 
 .galleryContainer {
-  height: 105vh;
+  height: 85vh;
   width: 97vw;
   display: flex;
   flex-direction: column;
@@ -393,26 +439,43 @@ footer {
 }
 
 .galleryTitle {
-  height: 10vh;
+  height: 5vh;
   text-align: center;
   background-color: #d9f0ff;
   color: #3b3e8f;
 }
 
 .galleryContnet {
-  height: 85vh;
+  height: 45vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
 .galleryButton {
-  height: 10vh;
+  height: 5vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #3b3e8f;
   border-radius: 10px;
+}
+
+.galleryButton button {
+  height: 4vh;
+  width: 35vw;
+  border-radius: 1.3vw;
+  border: 2px solid transparent;
+  color: black;
+  background-color: #83c9f4;
+  font-size: medium;
+  font-weight: bold;
+}
+
+.galleryButton button:hover {
+  transition: 0.2s ease-in-out;
+  color: white;
+  background-color: #1e2151;
+  border: 2px solid #d9f0ff;
 }
 
 .galleryCOntentLeft,
@@ -423,7 +486,6 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* background-color: aliceblue; */
   background-color: #d9f0ff;
   margin-top: 10px;
 }
@@ -444,23 +506,6 @@ footer {
 
 .galleryContentCenter img {
   height: inherit;
-}
-
-.galleryButton button {
-  height: 7vh;
-  width: 15vw;
-  border-radius: 1.3vw;
-  border: 2px solid transparent;
-  color: #6f73d2;
-  font-size: medium;
-  font-weight: bold;
-}
-
-.galleryButton button:hover {
-  transition: 0.3s ease-in-out;
-  color: white;
-  background-color: #83c9f4;
-  border: 2px solid #d9f0ff;
 }
 
 .storyPage,
@@ -486,6 +531,8 @@ footer {
 .storyContainer,
 .offerContainer {
   width: 97vw;
+  border: 3px solid #1e2151;
+  border-radius: 0.75vw;
 }
 
 .storyContainerRight,
