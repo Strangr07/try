@@ -29,6 +29,7 @@ a {
 
   transition: ease-in-out 0.6s;
 }
+
 .navigation a:hover {
   letter-spacing: 0.005em;
   font-weight: bold;
@@ -116,6 +117,7 @@ a {
   margin-left: 5px;
   font-weight: lighter;
 }
+
 .landingContainerRight p,
 .storyContainerRight p,
 .storyContainerRight p {
@@ -125,9 +127,7 @@ a {
   letter-spacing: 1px;
 }
 
-.landingContainerButton,
-.storyContainerButton,
-.offerContainerButton {
+.landingContainerButton {
   margin-top: 4vh;
   position: relative;
   left: 44.5vw;
@@ -141,14 +141,16 @@ a {
   transition: ease-in-out 0.3s, transform 0.3s ease-in-out;
   border: 2px solid transparent;
 }
+
 .landingContainerButton:hover,
 .storyContainerButton:hover,
-.storyContainerButton:hover {
+.offerContainerButton:hover {
   background-color: #d9f0ff;
   color: #3b3e8f;
   transform: scale(1.01);
   border-color: #1e2151;
 }
+
 .planningPage {
   background-color: #6f73d2;
   height: 20vh;
@@ -179,6 +181,7 @@ a {
   outline: none;
   padding: 0 15px;
 }
+
 .planningContainer input::placeholder {
   text-align: center;
   font-size: 1.2em;
@@ -200,6 +203,7 @@ a {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   transition: ease 0.6s;
 }
+
 .planningContainer button:hover {
   background-color: #1e2151;
 }
@@ -230,12 +234,14 @@ a {
   width: 80vw;
   color: #3b3e8f;
 }
+
 .overviewVideo {
   background-color: beige;
   height: 55vh;
   width: 90vw;
   margin: 2vh 0;
 }
+
 .overviewVideo video {
   object-fit: cover;
   height: 55vh;
@@ -290,6 +296,7 @@ a {
   height: 25vh;
   width: 25vw;
 }
+
 .itemImage img {
   height: inherit;
   width: inherit;
@@ -307,6 +314,7 @@ a {
   flex-direction: column;
   justify-content: center;
 }
+
 .itemButton button {
   height: 3vh;
   width: 23vw;
@@ -324,28 +332,34 @@ footer {
   justify-content: space-around;
   align-items: center;
 }
+
 .footerLogo,
 .footerNav,
 .footerContact {
   height: 30vh;
 }
+
 .footerLogo {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .footerLogo img {
   object-fit: cover;
   height: 28vh;
 }
+
 .footerNav {
   display: flex;
   flex-direction: column;
 }
+
 .footerNav a {
   color: black;
   line-height: 3.5vh;
 }
+
 .footerSocial {
   height: 7vh;
   background-color: aquamarine;
@@ -353,6 +367,7 @@ footer {
   justify-content: center;
   align-items: center;
 }
+
 .footerWatermark {
   height: 3vh;
   background-color: beige;
@@ -375,13 +390,13 @@ footer {
   flex-direction: column;
   justify-content: space-between;
   background-color: #d9f0ff;
-  color: #3b3e8f;
 }
 
 .galleryTitle {
   height: 10vh;
   text-align: center;
   background-color: #d9f0ff;
+  color: #3b3e8f;
 }
 
 .galleryContnet {
@@ -420,8 +435,7 @@ footer {
 }
 
 .galleryContentCenter {
-  /* background-color: #d9f0ff; */
-  background-color: white;
+  background-color: #d9f0ff;
   height: 50vh;
   display: flex;
   justify-content: center;
@@ -449,46 +463,67 @@ footer {
   border: 2px solid #d9f0ff;
 }
 
-.storyPage,.offerPage{
+.storyPage,
+.offerPage {
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 75vh;
 }
 
-.storyTitle, .offerTitle{
+.storyTitle,
+.offerTitle {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: white;
+  background-color: #d9f0ff;
+  color: #3b3e8f;
   height: 10vh;
   width: 98vw;
 }
 
-.storyContainerRight{
-  background-color: white;
+.storyContainer,
+.offerContainer {
+  width: 97vw;
 }
 
-.storyContainerLeft{
-  background-color: #83c9f4;
-}
-
-.offerContainerRight{
+.storyContainerRight,
+.offerContainerRight {
+  background-color: #d9f0ff;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
 }
 
-.offerContainerButton{
-  left: 0;
+.storyContainerRight h1,
+.storyContainerRight h3 {
+  text-align: center;
 }
 
-.alertPage{
-height: 30vh;
-background-color: #d9f0ff;
-display: flex;
-justify-content: space-around;
-align-items: center;
+.storyContainerRight button, .offerContainer button {
+  background-color: #3b3e8f;
+  color: #d9f0ff;
+  padding: 10px 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: ease-in-out 0.3s, transform 0.3s ease-in-out;
+  border: 2px solid transparent;
+}
+
+.storyContainerLeft img,
+.offerContainerLeft img {
+  height: inherit;
+}
+
+.alertPage {
+  height: 30vh;
+  background-color: #d9f0ff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
