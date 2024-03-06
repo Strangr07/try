@@ -240,6 +240,7 @@ a {
   object-fit: cover;
   height: 55vh;
   width: 90vw;
+  border-radius: 10px;
 }
 
 .packagePage {
@@ -360,7 +361,7 @@ footer {
 
 .galleryPage {
   background-color: #d9f0ff;
-  height: 95vh;
+  height: 110vh;
   margin: 3vh 0;
   display: flex;
   justify-content: center;
@@ -368,52 +369,84 @@ footer {
 }
 
 .galleryContainer {
-  background-color: #6f73d2;
-  height: 90vh;
+  height: 105vh;
   width: 97vw;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-color: #d9f0ff;
+  color: #3b3e8f;
 }
 
 .galleryTitle {
-  height: 12vh;
+  height: 10vh;
   text-align: center;
+  background-color: #d9f0ff;
 }
 
 .galleryContnet {
-  height: 82vh;
+  height: 85vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+
+.galleryButton {
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3b3e8f;
+  border-radius: 10px;
 }
 
 .galleryCOntentLeft,
 .galleryContentRight {
+  height: 75vh;
   width: 27vw;
-  background-color: aliceblue;
-  height: 65vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+  /* background-color: aliceblue; */
+  background-color: #d9f0ff;
+  margin-top: 10px;
+}
+
+.galleryCOntentLeft img,
+.galleryContentRight img {
+  margin-top: 5vh;
+  height: 30vh;
 }
 
 .galleryContentCenter {
-  width: 30vw;
-  background-color: aliceblue;
+  /* background-color: #d9f0ff; */
+  background-color: white;
   height: 50vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.galleryButton {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 8vh;
-  background-color: #3b3e8f;
+.galleryContentCenter img {
+  height: inherit;
+}
+
+.galleryButton button {
+  height: 7vh;
+  width: 15vw;
+  border-radius: 1.3vw;
+  border: 2px solid transparent;
+  color: #6f73d2;
+  font-size: medium;
+  font-weight: bold;
+}
+
+.galleryButton button:hover {
+  transition: 0.3s ease-in-out;
+  color: white;
+  background-color: #83c9f4;
+  border: 2px solid #d9f0ff;
 }
 
 .storyPage,.offerPage{
