@@ -453,12 +453,9 @@ footer {
 }
 
 .alertPage{
-  
 height: 30vh;
 background-color: #d9f0ff;
 display: flex;
 justify-content: space-around;
 align-items: center;
 }
-
-
